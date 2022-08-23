@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import { NextPage } from 'next'
 import { getSession } from 'next-auth/react'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -6,7 +6,7 @@ import Center from '../components/Center'
 import Sidebar from '../components/Sidebar'
 import Player from '../components/Player'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <div className="bg-black h-screen overflow-hidden">
 
