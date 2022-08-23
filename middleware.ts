@@ -23,6 +23,6 @@ export async function middleware(req: NextRequest) {
     // are requesting a protected route
     if (!token && pathname !== '/login') {
         // const url = new URL('/login', process.env.NEXTAUTH_URL)
-        return NextResponse.redirect('https://spotify-clone-charlton.vercel.app/login');
+        return NextResponse.redirect(`${process.env.NEXTAUTH_URL}/login`);
     }
 }
